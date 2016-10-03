@@ -189,9 +189,10 @@ int main() {
 	if (!time_limit)
 		time_limit = _MULTIPROJECT_TIME_LIMIT_;
 
-	bool next_test = true;
+	bool next_test = true, tested = false;
 
 	if (!is_file_empty("sample.in")) {
+		tested = true;
 		cout << "Testing samples\n";
 		CopyFile("sample.in", "tmp_input.txt", FALSE);
 		if (tryExecute(false)) {
@@ -214,6 +215,7 @@ int main() {
 
 	if (next_test) {
 		if (!is_file_empty("random_test_generator.txt")) {
+			tested = true;
 			cout << '\n';
 			int code = random_test_generator();
 			if (!code) {
@@ -231,6 +233,7 @@ int main() {
 			cout << "\nRandom test generator not found, passing by\n";
 
 		if (!is_file_empty("input.txt")) {
+			tested = true;
 			cout << "\nTesting other inputs\n";
 			CopyFile("input.txt", "tmp_input.txt", FALSE);
 			tryExecute(true);
@@ -238,6 +241,19 @@ int main() {
 		}
 		else
 			cout << "\nOther inputs not found, passing by\n";
+
+		if (!tested) {
+			cout << "\nThere are no input files for testing. Do you want to "
+				<< "start testing with out any input? (y/n)\n";
+			char c;
+			while (cin >> c, c != 'y' && c != 'n')
+				;
+			if (c == 'y') {
+				cout << "\nTesting with out any input\n";
+				tryExecute(true);
+				copy_file_if_small("big_output.txt", "output.txt");
+			}
+		}
 	}
 	else
 		cout << "\nSubsequent testing has been canceled\n";

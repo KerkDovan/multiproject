@@ -55,6 +55,11 @@ namespace project {
 #define freopen_out(filename) freopen(filename, "w", stdout)
 #define close_files
 
+	struct MultiprojectDebug {
+		template<class _Ty> friend MultiprojectDebug&
+		operator << (MultiprojectDebug& db, const _Ty&) { return db; }
+	} debug;
+
 #endif
 
 // Changeable code continues here. 

@@ -4,7 +4,9 @@
 
 #include "tools.h"
 
-#if true & _DEBUG // enable/disable debug
+#define _USE_DEBUG true & _DEBUG
+
+#if _USE_DEBUG // enable/disable debug
 #define breakpoint __asm { int 3 }
 #define breakpoint_if(condition) if (condition) breakpoint;
 #define breakpoint_counters project::tools::debugging::BreakpointCounters
@@ -65,7 +67,14 @@ namespace project {
 
 			std::map<std::string, long long> BreakpointCounters;
 
+#if _USE_DEBUG
 			std::ofstream debug;
+#else
+			struct MultiprojectDebug {
+				template<class _Ty> friend MultiprojectDebug&
+					operator << (MultiprojectDebug& db, const _Ty&) { return db; }
+			} debug;
+#endif // _USE_DEBUG_
 
 			std::vector<std::string> get_names_of_variables(const char* names) {
 				std::vector<std::string> result;
