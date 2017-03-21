@@ -51,19 +51,19 @@ namespace tools {
 		}
 
 		inline int random_int(int from, int to) {
-			return (int)(std::rand() % (to - from) + from);
+			return std::rand() % (to - from) + from;
 		}
 
 		inline int random_int() {
-			return (int)std::rand();
+			return std::rand();
 		}
 
 		inline unsigned int random_uint(unsigned int from, unsigned int to) {
-			return (unsigned int)(std::rand() % (to - from) + from);
+			return std::rand() % (to - from) + from;
 		}
 
 		inline unsigned int random_uint() {
-			return (unsigned int)std::rand();
+			return std::rand();
 		}
 
 	}

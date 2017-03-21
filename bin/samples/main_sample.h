@@ -4,12 +4,14 @@
 #define _USE_MATH_DEFINES
 
 #include <algorithm>
+#include <array>
 #include <bitset>
 #include <cassert>
 #include <cmath>
 #include <cstdlib>
 #include <deque>
 #include <fstream>
+#include <functional>
 #include <iomanip>
 #include <map>
 #include <memory>
@@ -21,8 +23,8 @@
 #include <tuple>
 #include <vector>
 
-#define stringify(str) stringify2(str)
-#define stringify2(str) #str
+#define stringify(...) stringify2(__VA_ARGS__)
+#define stringify2(...) #__VA_ARGS__
 
 // Changeable code stops here. 
 	
@@ -51,8 +53,13 @@ namespace project {
 #define breakpoint_counters_clear
 #define only_multiproject(...)
 #define debug_output(...)
+#ifdef _MULTIPROJECT_PROJECT_CONFIG_H_
+#define freopen_in(filename) freopen("project\\" ## filename, "r", stdin)
+#define freopen_out(filename) freopen("project\\" ## filename, "w", stdout)
+#else
 #define freopen_in(filename) freopen(filename, "r", stdin)
 #define freopen_out(filename) freopen(filename, "w", stdout)
+#endif
 #define close_files
 
 	struct MultiprojectDebug {
@@ -65,6 +72,9 @@ namespace project {
 // Changeable code continues here. 
 
 	using namespace std;
+#ifdef MYLIB
+	using namespace MyLib;
+#endif // MYLIB
 
 	typedef long long ll;
 	typedef unsigned long long ull;

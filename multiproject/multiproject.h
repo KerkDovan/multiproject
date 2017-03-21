@@ -2,12 +2,32 @@
 #ifndef _MULTIPROJECT_MULTIPROJECT_H_
 #define _MULTIPROJECT_MULTIPROJECT_H_
 
+#include <map>
+#include <memory>
+#include <string>
+#include <typeinfo>
+#include <vector>
+
 #include "tools.h"
 
-#define _USE_DEBUG true & _DEBUG
+#ifndef _USE_DEBUG
+#define _USE_DEBUG (true && _DEBUG)
+#endif
+
+#if defined (_WIN32) || defined (__WIN32__) || defined (_WIN64) || defined (__WIN64__)
+#define popen _popen
+#define pclose _pclose
+#endif
 
 #if _USE_DEBUG // enable/disable debug
+#ifdef __GNUC__
+#define breakpoint __asm("int $3")
+#elif defined _MSC_VER
 #define breakpoint __asm { int 3 }
+#else
+#warning "Cannot define 'breakpoint'"
+#define breakpoint
+#endif
 #define breakpoint_if(condition) if (condition) breakpoint;
 #define breakpoint_counters project::tools::debugging::BreakpointCounters
 #define breakpoint_counter(name) breakpoint_counters[stringify(name)]
@@ -20,12 +40,12 @@
 #define breakpoint_when_offset(counter_name, equal_to, offset) \
 	breakpoint_when(counter_name, equal_to); breakpoint_counter_offset(counter_name, offset);
 #define breakpoint_counters_clear breakpoint_counters.clear();
-#define debug_output(name, ...) { debug << "Debug output " << name << (string(name).empty() ? "" : " ") \
-	<< "on line " << __LINE__ << '\n'; \
-	output_variadic_arguments(\
+#define debug_output(name, ...) { debug << "Debug output" << (name[0] ? ": " : "") << name \
+	<< "\n    in file " << __FILE__ << "\n    on line " << __LINE__ \
+	<< "\n    in function " << __func__ << '\n'; \
+	output_variadic_arguments( \
 	get_names_of_variables(stringify(__VA_ARGS__)), \
-	0, \
-	__VA_ARGS__); debug << '\n'; }
+	0, __VA_ARGS__); debug << std::endl; }
 #else
 #define breakpoint
 #define breakpoint_if(...)
@@ -40,13 +60,15 @@
 #endif
 
 #define only_multiproject(...) __VA_ARGS__
-#define freopen_in(...) project::cin.open("tmp_input.txt"); \
-	project::std_in = fopen("tmp_input.txt", "r");
-#define freopen_out(...) project::cout.open("big_output.txt"); \
-	project::tools::debugging::debug.open("debug_output.txt"); \
-	project::std_out = fopen("big_output.txt", "w");
+#define freopen_in(...) project::cin.open(project::tools::selectProjectFile(MPF_tmp_input)); \
+	project::std_in = fopen(project::tools::selectProjectFile(MPF_tmp_input), "r");
+#define freopen_out(...) project::cout.open(project::tools::selectProjectFile(MPF_big_output)); \
+	project::tools::debugging::debug.open(project::tools::selectProjectFile(MPF_debug_output)); \
+	project::std_out = fopen(project::tools::selectProjectFile(MPF_big_output), "w");
+// TODO: Check std_in and std_out;
 #define close_files project::cin.close(); project::cout.close(); \
-	project::tools::debugging::debug.close(); fclose(std_in); fclose(std_out);
+	project::tools::debugging::debug.close(); if (project::std_in) fclose(project::std_in); \
+	if (project::std_out) fclose(project::std_out);
 
 #define scanf(...) fscanf(project::std_in, __VA_ARGS__)
 #define printf(...) fprintf(project::std_out, __VA_ARGS__)
@@ -59,9 +81,64 @@ namespace project {
 	FILE* std_in;
 	FILE* std_out;
 
-	static unsigned long long _m_counter_ = 0;
-	
+	//static unsigned long long _m_counter_ = 0;
+
 	namespace tools {
+
+		std::string exec(const char* cmd) {
+			char buffer[128];
+			std::string result = "";
+			std::shared_ptr<FILE> pipe(popen(cmd, "r"), pclose);
+			if (!pipe)
+				throw std::runtime_error("popen() failed!");
+			while (!feof(pipe.get())) {
+				if (fgets(buffer, 128, pipe.get()) != NULL)
+					result += buffer;
+			}
+			return result;
+		}
+
+		std::string exec(const std::string& cmd) {
+			return exec(cmd.c_str());
+		}
+
+		bool exist(const std::string& name) {
+			return exec("if exist \"" + name + "\" echo exists") == "exists\n";
+		}
+
+		enum MultiprojectProjectFiles {
+			MPF_checker_verdict = 0,
+			MPF_debug_output = 1,
+			MPF_tmp_input = 2,
+			MPF_big_output = 3,
+			MPF_input = 4,
+			MPF_output = 5,
+			MPF_random_big_output = 6,
+			MPF_random_output = 7,
+			MPF_random_test_generator = 8,
+			MPF_samplein = 9,
+			MPF_sampleout = 10,
+		};
+
+		const char* MULTIPROJECT_PROJECT_FILES[][2] = {
+			{ "project\\checker_verdict.txt", "checker_verdict.txt" },
+			{ "project\\debug_output.txt", "debug_output.txt" },
+			{ "project\\tmp_input.txt", "tmp_input.txt" },
+			{ "project\\big_output.txt", "big_output.txt" },
+			{ "project\\input.txt", "input.txt" },
+			{ "project\\output.txt", "output.txt" },
+			{ "project\\random_big_output.txt", "random_big_output.txt" },
+			{ "project\\random_output.txt", "random_output.txt" },
+			{ "project\\random_test_generator.txt", "random_test_generator.txt" },
+			{ "project\\sample.in", "sample.in" },
+			{ "project\\sample.out", "sample.out" },
+		};
+
+		const char* selectProjectFile(MultiprojectProjectFiles file) {
+			return exist(MULTIPROJECT_PROJECT_FILES[file][0]) ?
+				MULTIPROJECT_PROJECT_FILES[file][0] :
+				MULTIPROJECT_PROJECT_FILES[file][1];
+		}
 
 		namespace debugging {
 
@@ -71,6 +148,8 @@ namespace project {
 			std::ofstream debug;
 #else
 			struct MultiprojectDebug {
+				void open(const std::string&) {}
+				void close() {}
 				template<class _Ty> friend MultiprojectDebug&
 					operator << (MultiprojectDebug& db, const _Ty&) { return db; }
 			} debug;
@@ -97,6 +176,16 @@ namespace project {
 				return result;
 			}
 
+			template<typename _Head>
+			void output_variadic_arguments (
+				const std::vector<std::string>& names,
+				size_t id,
+				const _Head& head
+			) {
+				debug << names[id] << " == " << std::boolalpha << head
+					<< " (" << typeid(head).name() << ")\n";
+			}
+
 			template<typename _Head, typename... _Tail>
 			void output_variadic_arguments(
 				const std::vector<std::string>& names,
@@ -104,19 +193,9 @@ namespace project {
 				const _Head& head,
 				const _Tail&... tail
 			) {
-				debug << names[id] << " == " << boolalpha << head
+				debug << names[id] << " == " << std::boolalpha << head
 					<< " (" << typeid(head).name() << ")\n";
 				output_variadic_arguments(names, id + 1, tail...);
-			}
-
-			template<typename _Head>
-			void output_variadic_arguments (
-				const std::vector<std::string>& names,
-				size_t id,
-				const _Head& head
-				) {
-				debug << names[id] << " == " << boolalpha << head
-					<< " (" << typeid(head).name() << ")\n";
 			}
 
 			namespace format {

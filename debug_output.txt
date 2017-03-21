@@ -1,0 +1,21 @@
+Debug output
+    in file D:\My Data\Coding\VS Community\multiproject/multiproject/project/main.h
+    on line 94
+    in function main
+a.value == 13 (i)
+b.value == 65 (i)
+a < b == true (b)
+a <= b == true (b)
+a > b == false (b)
+a >= b == false (b)
+a == b == false (b)
+a != b == true (b)
+c.value == 37 (i)
+d.value == 68 (i)
+c < d == false (b)
+c <= d == false (b)
+c > d == true (b)
+c >= d == true (b)
+c == d == false (b)
+c != d == true (b)
+

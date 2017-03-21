@@ -1,0 +1,1182 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fac",
+				"factorized"
+			],
+			[
+				"init",
+				"init_fact"
+			],
+			[
+				"l",
+				"l_pr_div"
+			],
+			[
+				"fa",
+				"factorized"
+			],
+			[
+				"num",
+				"num_div_l_pr"
+			],
+			[
+				"prim",
+				"primes_count"
+			],
+			[
+				"debug",
+				"debug_output"
+			],
+			[
+				"b",
+				"baseLen"
+			],
+			[
+				"enco",
+				"encoded"
+			],
+			[
+				"Ci",
+				"CipherBase"
+			],
+			[
+				"Cip",
+				"Cipher"
+			],
+			[
+				"base",
+				"baseSize"
+			],
+			[
+				"bas",
+				"baseLen"
+			],
+			[
+				"encoded",
+				"encodedKey"
+			],
+			[
+				"ba",
+				"baseSize"
+			],
+			[
+				"file",
+				"file_base_name"
+			],
+			[
+				"fi",
+				"fib_mem"
+			],
+			[
+				"Q",
+				"Quick"
+			],
+			[
+				"Qu",
+				"Quick"
+			],
+			[
+				"Ke",
+				"Keyboard"
+			],
+			[
+				"Matr",
+				"MatrType"
+			],
+			[
+				"VE",
+				"VectType"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "multiproject/project/main.h",
+			"settings":
+			{
+				"buffer_size": 2633,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/input.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/output.txt",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/sample.in",
+			"settings":
+			{
+				"buffer_size": 53,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/sample.out",
+			"settings":
+			{
+				"buffer_size": 109,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/debug_output.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "multiproject/project/config_project.h",
+			"settings":
+			{
+				"buffer_size": 327,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Multiproject - Build and Run - Debug",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Multiproject - Build - Debug",
+					""
+				],
+				[
+					"Multiproject - Build - Release",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Debug",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Release",
+					""
+				],
+				[
+					"Multiproject - Run",
+					""
+				]
+			],
+			[
+				"Multiproject - Build and Run - Debug",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Multiproject - Build - Debug",
+					""
+				],
+				[
+					"Multiproject - Build - Release",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Debug",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Release",
+					""
+				],
+				[
+					"Multiproject - Run",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				]
+			],
+			[
+				"Multiproject - Build and Run - Debug",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Multiproject - Build - Debug",
+					""
+				],
+				[
+					"Multiproject - Build - Release",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Debug",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Release",
+					""
+				],
+				[
+					"Multiproject - Run",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Run"
+				]
+			],
+			[
+				"Multiproject - Build and Run - Debug",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Multiproject - Build - Debug",
+					""
+				],
+				[
+					"Multiproject - Build - Release",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Debug",
+					""
+				],
+				[
+					"Multiproject - Build and Run - Release",
+					""
+				],
+				[
+					"Multiproject - Run",
+					""
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					""
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"JSON"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"Property List"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Block Style)"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Default Style)"
+				]
+			],
+			[
+				"Multiproject - Build - Debug",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Run"
+				]
+			],
+			[
+				"Packages/User/C++.sublime-build",
+				"Multiproject - Build and Run - Debug"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Debug"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build and Run - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Build - Release"
+				],
+				[
+					"Packages/User/C++.sublime-build",
+					"Multiproject - Run"
+				]
+			],
+			[
+				"Packages/User/C++.sublime-build",
+				"Multiproject - Build and Run - Debug"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pci",
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ssjson",
+				"Set Syntax: Sublime Text Syntax Def (JSON)"
+			],
+			[
+				"ssbuld",
+				"Set Syntax: Sublime Text Build System"
+			],
+			[
+				"ped",
+				"Project: Edit Project"
+			],
+			[
+				"tme",
+				"View: Toggle Menu"
+			],
+			[
+				"me",
+				"MultiEditUtils: Preserve Case"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sssql",
+				"Set Syntax: SQL"
+			],
+			[
+				"+",
+				"Set Syntax: C++"
+			],
+			[
+				"ssset",
+				"Set Syntax: Sublime Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build: Cancel"
+			],
+			[
+				"d",
+				"Set Syntax: D"
+			],
+			[
+				"buil",
+				"Build: New Build System"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"setxml",
+				"Set Syntax: XML"
+			],
+			[
+				"tree",
+				"JsonTree: Show Tree"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"tre",
+				"JsonTree: Show Tree"
+			],
+			[
+				"xml",
+				"xml2json"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"spy",
+				"Set Syntax: Python"
+			],
+			[
+				"ssyam",
+				"Set Syntax: YAML"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"sspla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"wt",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss+",
+				"Set Syntax: C++"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"int(\"444444444\", 5)",
+			"5**9",
+			"2**27",
+			"int(\"444444444\", 5)",
+			"int(4, 5)",
+			"int(\"4\", 5)",
+			"for n in range(0, 11): print(1378 ** n)",
+			"for n in range(0, 11):",
+			"sublime.active_window().panels()",
+			"import urllib.request,os,hashlib; h = '261dd1222b4693ce6d4f85f9c827ac06' + '6d5ab8ebdd020086947172a8a1356bb6'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/My Data/Coding/VS Community/multiproject"
+	],
+	"file_history":
+	[
+		"/D/My Data/Универ/5 семестр/Сети и Телекоммуникации/Лабораторные работы/05/index.html",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/test_kek/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/test_kek/config_project.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/libs/MyMath/experimental.hpp",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/test/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/_multiproject_needs/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject.sublime-project",
+		"/C/Users/bogom/Desktop/kek.cpp",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/link_to_main_h.cpp",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/controller.cmd",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/project/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/multiproject.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/main.cpp",
+		"/C/Users/bogom/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-build",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/libs/MyMath/Matrix.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/libs/MyMath.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/libs/MyMath/Iterators.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/libs/MyMath/IteratorBase.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/samples/main_sample.h",
+		"/C/Users/bogom/AppData/Roaming/Sublime Text 3/Packages/FuzzyFileNav/Default (Windows).sublime-keymap",
+		"/D/My",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/university/5_sem/Computational_Mathematics/lab02/lab02_v2/main.h",
+		"/D/mingw64/lib/gcc/x86_64-w64-mingw32/6.2.0/include/c++/iostream",
+		"/C/Users/bogom/AppData/Roaming/Sublime Text 3/Packages/User/batch.sublime-build",
+		"/C/Users/bogom/AppData/Roaming/Sublime Text 3/Packages/User/html.sublime-build",
+		"/C/Users/bogom/Desktop/kek.cmd",
+		"/C/Users/bogom/Desktop/kek.js",
+		"/C/Users/bogom/Desktop/kek.html",
+		"/C/Users/bogom/Desktop/kek.cs",
+		"/C/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/Tools/vsvars32.bat",
+		"/D/My Data/Универ/5 семестр/Вычислительная Математика/ВM/VM2_LAN.exe",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/project/big_output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject.sublime-workspace",
+		"/D/My Data/Coding/VS Community/multiproject/project/sample.in",
+		"/D/My Data/Coding/VS Community/multiproject/project/output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/project/debug_output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/project/input.txt",
+		"/D/My Data/Coding/VS Community/multiproject/project/sample.out",
+		"/D/My Data/Coding/VS Community/multiproject/project/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/.gitattributes",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/multiproject.sublime-project",
+		"/C/Users/bogom/Desktop/ec.py",
+		"/C/Users/bogom/Desktop/C++/C++ Single File.sublime-build",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/tools.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/test/config_project.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/project/checker.h",
+		"/D/My Data/Универ/5 семестр/Метрология, Стандартизация и Сертификация/Отчёты/Псевдокод.txt",
+		"/D/My Data/Универ/5 семестр/Метрология, Стандартизация и Сертификация/Отчёты/lab03_task.txt",
+		"/D/My Data/Coding/Keil/rmdir.cmd",
+		"/D/My Data/Coding/Keil/SLIP_testing/Src/main.c",
+		"/D/My Data/Coding/Keil/SLIP_testing/rmdir.cmd",
+		"/D/My Data/Coding/Keil/SLIP_testing/MDK-ARM/rmdir.cmd",
+		"/D/My Data/Coding/Keil/SLIP_testing/MDK-ARM/RTE/rmdir.cmd",
+		"/D/My Data/Coding/Keil/SLIP_testing/MDK-ARM/RTE/Network/Net_Config_SLIP.h",
+		"/D/My Data/Coding/Keil/SLIP_testing/MDK-ARM/RTE/Network/Net_Config.c",
+		"/D/My Data/Coding/Keil/SLIP_testing/MDK-ARM/RTE/RTE_Components.h",
+		"/C/Users/bogom/Desktop/Electronic_club/modbus/ModbusRtu.cs",
+		"/C/Users/bogom/Downloads/ModbusRtu.cs",
+		"/C/Users/bogom/Downloads/Modbus_Rus.doc",
+		"/D/My Data/Coding/VS Community/telecom/lab06/bin/Debug/kek.xml",
+		"/C/Users/bogom/Desktop/kek.d",
+		"/C/Users/bogom/Desktop/kek_not_constexpr.cpp",
+		"/C/Users/bogom/Desktop/kek_constexpr.cpp",
+		"/C/Users/bogom/Desktop/kek.py",
+		"/C/Users/bogom/Desktop/azaza.py",
+		"/C/Users/bogom/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/D/My Data/Coding/VS Community/telecom/lab06/kek.xml",
+		"/D/My Data/Coding/VS Community/telecom/lab10/FormKekSniffer.cs",
+		"/F/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/samples/checker.h",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/project/output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/NEERC/2004/d/config_project.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/samples/config_project.h",
+		"/D/My Data/Coding/VS Community/multiproject/controller/main.h",
+		"/C/Users/bogom/kek",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/MyGeometry.h",
+		"/D/My Data/Coding/Keil/SPI/Src/main.c",
+		"/C/Users/bogom/Desktop/Electronic_club/main.c",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/MyGeometry.cpp",
+		"/C/Users/bogom/Desktop/archikek.py",
+		"/C/Users/bogom/Downloads/Novy_textovy_dokument.txt",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_TESTING_WITH_COMPILE.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_TESTING_IN_LOOP.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_TESTING.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner.default.properties",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/big_output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/output.txt",
+		"/D/My Data/Coding/VS Community/multiproject/multiproject/main.h",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_LOCAL_RUNNER_IN_LOOP.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_LOCAL_RUNNER.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_TESTING_CONSOLE_IN_LOOP.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_TESTING_CONSOLE.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__POPD_CALL.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__START_EMULATOR.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/__start.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/MyStrategy.h",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/MyStrategy.cpp",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/compile-vscpp.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/cpp-cgdk/__START_TESTING.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/__START_TESTING.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner-console.default.properties",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/result.txt",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/game.log",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner-replay.default.properties",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/read.me",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner-sync.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner-replay.bat",
+		"/C/Users/bogom/Desktop/CodeWizards 2016/local runner/local-runner-console.bat",
+		"/C/Users/bogom/.config/xonsh/config.json",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/university/5_sem/Computational_Mathematics/lab03/Метод Данилевского/LAB3.PAS",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/university/5_sem/Computational_Mathematics/lab03/Метод Данилевского/lab3.h",
+		"/C/Users/bogom/.xonshrc",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/_multiproject_needs/config_project.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/codeforces/339B/config_project.h",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/examine_preparation/answers/quest55.out",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/examine_preparation/answers/quest55.in",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/examine_preparation/answers/quest55.h",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/examine_preparation/answers.h",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/ep_question_list/question_list.txt",
+		"/D/My Data/Coding/VS Community/Для университета/СиАОДнЭВМ/examine_preparation/answers/quest67.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/f/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/e/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/d/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/c/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/b/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/175/a/main.h",
+		"/D/My Data/Coding/VS Community/multiproject/bin/projects/olympiads/olympic/151/8/main.h"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\My Data\\Coding\\VS Community\\multiproject\\multiproject\\"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"template",
+			"std::",
+			"vector",
+			"v",
+			"V",
+			"Vals",
+			"Arguments",
+			"Vals",
+			"Values",
+			"Container",
+			"values",
+			"Container",
+			"Vals",
+			"Values",
+			"Vals",
+			"Cont",
+			"args",
+			"Args",
+			"vals",
+			"Val",
+			"Cont",
+			"Vals",
+			"values",
+			"Val",
+			"Vals",
+			"Cont",
+			"values",
+			"Val",
+			"Vals",
+			"Val",
+			"str",
+			"Vals",
+			"has_find_1",
+			" '",
+			"mask",
+			"kek",
+			":",
+			"i",
+			",",
+			"int",
+			"-xc++",
+			"++",
+			"Wall",
+			"x ^ i",
+			"aj",
+			"ai",
+			"xored",
+			"arr",
+			"cout",
+			"tmp",
+			"//",
+			"_Ty",
+			"parent",
+			"value",
+			"rank",
+			"el1",
+			"_Ty",
+			"_parent",
+			"_value",
+			"value",
+			"_Ty",
+			"\t\t_Ty find(_Ty element) {\n",
+			"_Ty",
+			"int",
+			"_parent",
+			"ty",
+			"tx",
+			"ty",
+			"tx",
+			"bs",
+			"soldiers",
+			"bs",
+			"fld",
+			"operator",
+			"soldiers",
+			"reset",
+			"int",
+			"bs",
+			"soldiers",
+			"${file_base_name}",
+			"str",
+			">::",
+			"-I.. -I../libs",
+			"Ilibs",
+			"project",
+			"void",
+			"<<",
+			"ElementIteratorBase",
+			"(?<!\\\\)$",
+			"(?!\\\\)$",
+			"i",
+			" i",
+			"i",
+			"matrix",
+			"g++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas",
+			"g++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas -g ",
+			"PATH",
+			"WindowsSDK_ExecutablePath_x86",
+			"path",
+			"sharp",
+			"key",
+			"text",
+			"return",
+			":",
+			"DLOCAL_DEBUG",
+			"D_DEBUG",
+			"m32",
+			"Wall",
+			"_m_counter_",
+			"(unsigned int)",
+			"(int)",
+			"(int)(",
+			"DLOCAL_PROJECT ",
+			"},",
+			"}",
+			"Build",
+			"Run",
+			"Multiproject",
+			"\"shell_cmd\": \"",
+			"class",
+			"file",
+			"file_base_name",
+			"4096",
+			"gf3",
+			"3",
+			"2",
+			"512",
+			")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "multiproject/project/main.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 811.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "multiproject/project/input.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "multiproject/project/output.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "multiproject/project/sample.in",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 53,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "multiproject/project/sample.out",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "multiproject/project/debug_output.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "multiproject/project/config_project.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 271.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "multiproject.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\My Data\\Coding\\VS Community\\multiproject\\multiproject.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

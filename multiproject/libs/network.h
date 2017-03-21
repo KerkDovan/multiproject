@@ -7,6 +7,14 @@
 
 namespace Network {
 
+	inline int WSAAPI net_bind(
+		_In_ SOCKET s,
+		_In_reads_bytes_(namelen) const struct sockaddr FAR * name,
+		_In_ int namelen
+	) {
+		return bind(s, name, namelen);
+	}
+
 	void send_data(SOCKET& socket, const char* data, size_t size);
 	size_t recieve_data(SOCKET& socket, char* data, size_t admitted_size);
 
@@ -43,7 +51,7 @@ namespace Network {
 
 	int unload_WSA() {
 		// Выгружаем библиотеку wsock32.dll
-		WSACleanup();
+		return WSACleanup();
 	}
 
 }

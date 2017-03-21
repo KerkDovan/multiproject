@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Multiproject - Build and Run - Debug",
+			"shell_cmd": "g++ -I \"${project_path}/multiproject\" -I \"${project_path}/multiproject/libs\" -std=c++14 -xc++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas -g -DLOCAL_DEBUG -D_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC \"${project_path}/multiproject/main.cpp\" -o \"main.exe\" && ConEmu64 \"main.exe\""
+		},
+		{
+			"name": "Multiproject - Build - Debug",
+			"shell_cmd": "g++ -I \"${project_path}/multiproject\" -I \"${project_path}/multiproject/libs\" -std=c++14 -xc++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas -g -DLOCAL_DEBUG -D_DEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC \"../${file_base_name}.cpp\" -o \"main.exe\"",
+		},
+		{
+			"name": "Multiproject - Build and Run - Release",
+			"shell_cmd": "g++ -I \"${project_path}/multiproject\" -I \"${project_path}/multiproject/libs\" -std=c++14 -xc++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas -O2 \"../${file_base_name}.cpp\" -o \"main.exe\" && ConEmu64 \"main.exe\""
+		},
+		{
+			"name": "Multiproject - Build - Release",
+			"shell_cmd": "g++ -I \"${project_path}/multiproject\" -I \"${project_path}/multiproject/libs\" -std=c++14 -xc++ -Wall -Wextra -pedantic -Wformat=2 -Wfloat-equal -Wlogical-op -Wredundant-decls -Wconversion -Wcast-qual -Wcast-align -Wuseless-cast -Wno-shadow -Wno-unused-result -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-long-long -DLOCAL_PROJECT -Wno-unknown-pragmas -O2 \"../${file_base_name}.cpp\" -o \"main.exe\"",
+		},
+		{
+			"name": "Multiproject - Run",
+			"shell_cmd": "ConEmu64 \"${file_base_name}\""
+		},
+	],
+}

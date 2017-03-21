@@ -16,16 +16,20 @@
     <Filter Include="libs">
       <UniqueIdentifier>{cfb1c293-ac6c-462f-8f92-87537b9b1e3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="libs\MyMath">
+      <UniqueIdentifier>{a929edfd-6230-4b9e-a508-a835f2a4ac45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\MyLib">
+      <UniqueIdentifier>{d42f28da-50b3-432a-953e-0bdc8cc083b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="output.txt" />
-    <Text Include="limits.txt" />
-    <Text Include="debug_output.txt" />
-    <Text Include="checker_verdict.txt" />
-    <Text Include="random_test_generator.txt" />
-    <Text Include="random_output.txt" />
-    <Text Include="random_big_output.txt" />
+    <Text Include="project\input.txt" />
+    <Text Include="project\output.txt" />
+    <Text Include="project\checker_verdict.txt" />
+    <Text Include="project\debug_output.txt" />
+    <Text Include="project\random_test_generator.txt" />
+    <Text Include="project\tmp_input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,15 +38,18 @@
     <ClCompile Include="random_test_generator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="libs\MyMath\IteratorBase.cpp">
+      <Filter>libs\MyMath</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\MyMath\Iterators.cpp">
+      <Filter>libs\MyMath</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\MyMath\Matrix.cpp">
+      <Filter>libs\MyMath</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="multiproject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="checker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="random_test_generator.h">
@@ -57,14 +64,47 @@
     <ClInclude Include="libs\PolStr.h">
       <Filter>libs</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sample.in" />
-    <None Include="sample.out" />
+    <ClInclude Include="libs\MyMath.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyMath\experimental.hpp">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="project\config_project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="project\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="project\checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyMath\IteratorBase.h">
+      <Filter>libs\MyMath</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyMath\Iterators.h">
+      <Filter>libs\MyMath</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyMath\Matrix.h">
+      <Filter>libs\MyMath</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyLib\MultiorderedSet.hpp">
+      <Filter>libs\MyLib</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyLib\TableStorage.hpp">
+      <Filter>libs\MyLib</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\MyLib\Variant.hpp">
+      <Filter>libs\MyLib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Object Include="libs\PolStr.obj">
       <Filter>libs</Filter>
     </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="project\sample.in" />
+    <None Include="project\sample.out" />
   </ItemGroup>
 </Project>

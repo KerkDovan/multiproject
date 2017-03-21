@@ -19,34 +19,44 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="checker_verdict.txt" />
-    <Text Include="debug_output.txt" />
-    <Text Include="input.txt" />
-    <Text Include="limits.txt" />
-    <Text Include="output.txt" />
-    <Text Include="random_big_output.txt" />
-    <Text Include="random_output.txt" />
-    <Text Include="random_test_generator.txt" />
+    <Text Include="project\checker_verdict.txt" />
+    <Text Include="project\debug_output.txt" />
+    <Text Include="project\input.txt" />
+    <Text Include="project\output.txt" />
+    <Text Include="project\random_test_generator.txt" />
+    <Text Include="project\tmp_input.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libs\MyMath\IteratorBase.cpp" />
+    <ClCompile Include="libs\MyMath\Iterators.cpp" />
+    <ClCompile Include="libs\MyMath\Matrix.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="random_test_generator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="checker.h" />
+    <ClInclude Include="libs\MyLib\MultiorderedSet.hpp" />
+    <ClInclude Include="libs\MyLib\TableStorage.hpp" />
+    <ClInclude Include="libs\MyLib\Variant.hpp" />
+    <ClInclude Include="libs\MyMath.h" />
+    <ClInclude Include="libs\MyMath\experimental.hpp" />
+    <ClInclude Include="libs\MyMath\IteratorBase.h" />
+    <ClInclude Include="libs\MyMath\Iterators.h" />
+    <ClInclude Include="libs\MyMath\Matrix.h" />
     <ClInclude Include="libs\network.h" />
     <ClInclude Include="libs\PolStr.h" />
-    <ClInclude Include="main.h" />
     <ClInclude Include="multiproject.h" />
+    <ClInclude Include="project\checker.h" />
+    <ClInclude Include="project\config_project.h" />
+    <ClInclude Include="project\main.h" />
     <ClInclude Include="random_test_generator.h" />
     <ClInclude Include="tools.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="sample.in" />
-    <None Include="sample.out" />
+    <Object Include="libs\PolStr.obj" />
   </ItemGroup>
   <ItemGroup>
-    <Object Include="libs\PolStr.obj" />
+    <None Include="project\sample.in" />
+    <None Include="project\sample.out" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2567DF3B-B083-4C7A-88F7-BB580D74A57E}</ProjectGuid>
@@ -106,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>D:\My Data\Coding\VS Community\multiproject\multiproject\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -125,6 +136,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\My Data\Coding\VS Community\multiproject\multiproject\libs;D:\My Data\Coding\VS Community\multiproject\multiproject\libs\MyLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

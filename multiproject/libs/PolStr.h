@@ -29,6 +29,13 @@
 // Если ошибок было несколько, хранится значение самой первой.
 extern int Error;
 //---------------------------------------------------------------------------
+extern unsigned StrToPolStr(char *, char *, unsigned);
+extern char *CreatePolStr(char *, unsigned);
+extern double EvalStr(char *, double, unsigned = 0);
+extern double EvalStr(char *, double *, unsigned, unsigned = 0, unsigned = 0);
+extern double EvalPolStr(char *, double, unsigned = 0);
+extern double EvalPolStr(char *, double *, unsigned = 0, unsigned = 0);
+//---------------------------------------------------------------------------
 // Преобразование выражения к обратной польской строке (ОПС). Выражение может
 // содержать числовые константы, числа PI и E, аргументы (x для скалярного,
 // x1..xn для векторного n-мерного аргумента), скобки и следующие операции:
@@ -71,7 +78,9 @@ extern int Error;
 // не встретится символ конца строки, символ ";" или не возникнет ошибка.
 // Если в процессе преобразования возникла ошибка, ОПС будет сформирована не
 // полностью. Следите за индикатором ошибки!
-extern unsigned StrToPolStr (char *, char *, unsigned);
+unsigned StrToPolStr(const char* expr, char* pstr, unsigned arg_count) {
+	return StrToPolStr(const_cast<char*>(expr), pstr, arg_count);
+}
 //---------------------------------------------------------------------------
 // Создание ОПС. Аргументы:
 // 1) char *expr - указатель на строку, содержащую исходное выражение;
@@ -80,7 +89,9 @@ extern unsigned StrToPolStr (char *, char *, unsigned);
 // вычислить длину ОПС, затем выделяет необходимую для хранения ОПС память и
 // снова вызывает StrToPolStr для формирования ОПС. Память выделяется
 // динамически, поэтому не забудьте освободить ее оператором delete [].
-extern char *CreatePolStr (char *, unsigned);
+char* CreatePolStr(const char * expr, unsigned arg_count) {
+	return CreatePolStr(const_cast<char*>(expr), arg_count);
+}
 //---------------------------------------------------------------------------
 // Вычисление выражения (скалярный аргумент). Аргументы:
 // 1) char *expr - указатель на строку, содержащую выражение;
@@ -89,7 +100,9 @@ extern char *CreatePolStr (char *, unsigned);
 //    выражение, 1 - первую производную, 2 - вторую производную и т.д.).
 // Данная функция просто возвращает значение функции EvalStr для векторного
 // аргумента: EvalStr(expr, &arg, 0, der, 0).
-extern double EvalStr (char *, double, unsigned = 0);
+double EvalStr(const char * expr, double arg, unsigned der = 0) {
+	return EvalStr(const_cast<char*>(expr), arg, der);
+}
 //---------------------------------------------------------------------------
 // Вычисление выражения (векторный аргумент). Аргументы:
 // 1) char *expr - указатель на строку, содержащую выражение;
@@ -108,7 +121,12 @@ extern double EvalStr (char *, double, unsigned = 0);
 // что не есть хорошо. В этом случае лучше один раз самостоятельно создать
 // ОПС с помощью функции CreatePolStr, а затем вызывать EvalPolStr вместо
 // EvalStr.
-extern double EvalStr (char *, double *, unsigned, unsigned = 0, unsigned = 0);
+double EvalStr(const char* expr, const double* args, unsigned arg_count, 
+	unsigned der = 0, unsigned arg_idx = 0)
+{
+	return EvalStr(const_cast<char*>(expr), const_cast<double*>(args), 
+		arg_count, der, arg_idx);
+}
 //---------------------------------------------------------------------------
 // Вычисление выражения в виде ОПС (скалярный аргумент). Аргументы:
 // 1) char *pstr - указатель на строку, содержащую ОПС;
@@ -116,7 +134,9 @@ extern double EvalStr (char *, double *, unsigned, unsigned = 0, unsigned = 0);
 // 3) unsigned der - порядок производной (по умолчанию 0).
 // Данная функция просто возвращает значение функции EvalPolStr для
 // векторного аргумента: EvalPolStr(pstr, &arg, der, 0).
-extern double EvalPolStr (char *, double, unsigned = 0);
+double EvalPolStr(const char* pstr, double arg, unsigned der = 0) {
+	return EvalPolStr(const_cast<char*>(pstr), arg, der);
+}
 //---------------------------------------------------------------------------
 // Вычисление выражения в виде ОПС (векторный аргумент). Это основная функция
 // для вычисления выражений, все остальные функции так или иначе вызывают ее.
@@ -132,7 +152,12 @@ extern double EvalPolStr (char *, double, unsigned = 0);
 // операции +, - и *, то можно вычислит любую его производную. Если оно
 // содержит другие функции и операции, то можно вычислить только первую и
 // вторую производные.
-extern double EvalPolStr (char *, double *, unsigned = 0, unsigned = 0);
+double EvalPolStr(const char* pstr, const double* args, unsigned der = 0, 
+	unsigned arg_idx = 0)
+{
+	return EvalPolStr(const_cast<char*>(pstr), const_cast<double*>(args), 
+		der, arg_idx);
+}
 //---------------------------------------------------------------------------
 #endif
 //---------------------------------------------------------------------------
