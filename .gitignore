@@ -18,8 +18,6 @@
 x64/
 x86/
 bld/
-bin/projects/
-multiproject/libs/
 [Oo]bj/
 [Ll]og/
 
@@ -302,3 +300,16 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# =========================
+# Multiproject
+# =========================
+
+# Temporary project files
+multiproject/project/
+
+# All projects
+bin/projects/
+
+# Libraries
+multiproject/libs/

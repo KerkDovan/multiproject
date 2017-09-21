@@ -19,3 +19,4 @@ polygon projects\olympiads\Polygon\
 mymath projects\MyMath\
 neuro projects\Neurowebs\
 mpc20 projects\multiproject_controller_v20\
+lerna projects\olympiads\lerna.pro\

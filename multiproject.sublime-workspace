@@ -99,7 +99,7 @@
 			"file": "multiproject/project/main.h",
 			"settings":
 			{
-				"buffer_size": 2633,
+				"buffer_size": 3875,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -117,7 +117,7 @@
 			"file": "multiproject/project/output.txt",
 			"settings":
 			{
-				"buffer_size": 109,
+				"buffer_size": 11449,
 				"line_ending": "Windows"
 			}
 		},
@@ -125,7 +125,7 @@
 			"file": "multiproject/project/sample.in",
 			"settings":
 			{
-				"buffer_size": 53,
+				"buffer_size": 0,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -134,7 +134,7 @@
 			"file": "multiproject/project/sample.out",
 			"settings":
 			{
-				"buffer_size": 109,
+				"buffer_size": 0,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -892,7 +892,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2633,
+						"buffer_size": 3875,
 						"regions":
 						{
 						},
@@ -909,7 +909,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 811.0,
+						"translation.y": 226.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -949,7 +949,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 109,
+						"buffer_size": 11449,
 						"regions":
 						{
 						},
@@ -980,7 +980,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 53,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1008,7 +1008,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 109,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1152,7 +1152,7 @@
 		[
 			[
 				"",
-				"D:\\My Data\\Coding\\VS Community\\multiproject\\multiproject.sublime-project"
+				"D:\\My Data\\Универ\\ГПО\\project\\project.sublime-project"
 			]
 		],
 		"width": 380.0
